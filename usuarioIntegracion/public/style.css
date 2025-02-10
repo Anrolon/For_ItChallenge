@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 1;
+    padding: 1;
+    box-sizing: border-box;
+}
+input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+h2{
+    text-align: center;
+    margin-top: 20px;   
+}
+
+.contenedorBuscador {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contenedorTarjetas {
+   display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.tarjetaUsuario h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    background-color: rgb(108, 108, 56);
+}
+
+.tarjetaUsuario p {
+    margin: 5px 0;
+    font-size: 1em;
+    background-color: beige;
+}
+.agregarCliente{
+    text-align: left;
+
+}
+.formularioAgregarUsuario {
+display: grid; grid-template-columns;
+background-color: beige;
+text-align: center;
+}
+
+.formularioAgregarUsuario input {
+    padding: 10px;
+    margin: 5px;
+    width: 10%;
+}
+
+.formularioAgregarUsuario button {
+    padding: 10px;
+   width: 7%;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #a04572;
+}
+
+
+
+@media (max-width: 768px) {
+    .tarjetaUsuario {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+}
